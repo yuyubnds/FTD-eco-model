@@ -1,0 +1,34 @@
+option = {
+  xAxis: {
+    type: 'category',
+    data: ['Primary producers(guava)', 'Primary consumer(bugs)', 'Secondary consumers(birds)', 'Decomposer(worms)']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  legend: {
+        show: true, // 显示图例
+        bottom: 10, // 图例位置（可选）
+        left: 'center' // 图例位置（可选）
+  },
+  series: [
+    {
+      name: "No biological invasion",
+      data: [11531.16932828, 281820.95049893, 31756.27959298, 227150.44266833],
+      type: 'bar',
+      color: "#3D994F"
+    },
+    {
+      name: "Brown tree snake invasion",
+      data: [8149.96588149, 542723.85964429, 629.11374963, 238341.32261273],
+      type: 'bar',
+      color: "#BDAE6F"
+    }
+  ]
+};
